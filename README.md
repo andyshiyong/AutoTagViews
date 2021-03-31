@@ -8,7 +8,7 @@ Add below dependency in your **build.gradle** file.
 ```groovy
 dependencies {
     implementation 'com.shiyong:tagviews:1.1.8'
-    implementation 'androidx.appcompat:appcompat:1.0.1'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
 }
 ```
 
