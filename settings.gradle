@@ -1,0 +1,3 @@
+include ':tagviews'
+include ':app'
+rootProject.name = "TagViews"
