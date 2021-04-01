@@ -1,10 +1,8 @@
 plugins {
     id 'com.android.library'
+    id 'com.github.dcendents.android-maven'
 }
-
-repositories {
-    maven { url "https://jitpack.io" }
-}
+group = 'com.github.Githubandyshiyong'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -40,4 +38,4 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
 
-apply from: 'https://github.com/andyshiyong/AutoTagViews/releases/download/v1.1/publish.gradle'
+//apply from: 'https://github.com/andyshiyong/AutoTagViews/releases/download/v1.1/publish.gradle'
