@@ -1,13 +1,10 @@
 plugins {
     id 'com.android.library'
-    id 'maven-publish'
 }
 
 repositories {
     maven { url "https://jitpack.io" }
 }
-group = 'com.shiyong'
-version = 'v1.1'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -42,17 +39,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
-afterEvaluate {
-    publishing {
-        publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
-                from components.release
-                groupId = 'com.shiyong'
-                artifactId = 'AutoTagViews'
-                version = 'v1.1'
-            }
-        }
-    }
-}
-//apply from: 'https://raw.githubusercontent.com/whilu/AndroidPublishLibrary/master/project/library/bintray_publish.gradle'
+
+apply from: 'https://github.com/andyshiyong/AutoTagViews/releases/download/v1.1/publish.gradle'
