@@ -2,13 +2,11 @@
 ## Usage
 
 ### Step 1
-
-Add below dependency in your **build.gradle** file.
-
-```groovy
+添加代码ku
+maven { url 'https://jitpack.io' }//
+添加依赖
 dependencies {
-    implementation 'com.shiyong:tagviews:1.1.8'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.github.andyshiyong:AutoTagViews:v1.1'
 }
 ```
 
