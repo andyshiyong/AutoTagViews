@@ -6,7 +6,7 @@
 maven { url 'https://jitpack.io' }//
 添加依赖
 dependencies {
-    implementation 'com.github.andyshiyong:AutoTagViews:v1.1'
+    implementation 'com.github.andyshiyong:AutoTagViews:1.1'
 }
 ```
 
