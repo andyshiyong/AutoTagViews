@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.shiyong.tabviews"
+        applicationId "com.shiyong.tagviews"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 11
@@ -29,12 +29,9 @@ android {
 }
 
 dependencies {
-
+    implementation project(path: ':tagviews')
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation project(path: ':tagviews')
-//    implementation 'com.github.andyshiyong:AutoTagViews:v1.1'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
