@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         mTagContainerLayout1.setDefaultImageDrawableID(R.drawable.yellow_avatar);
 
         // Set custom click listener
-        mTagContainerLayout1.setOnTagClickListener(new TagView.OnTagClickListener() {
+        mTagContainerLayout1.setOnTagClickListener(new OnTagViewClickListener() {
             @Override
             public void onTagClick(int position, String text) {
                 Toast.makeText(MainActivity.this, "click-position:" + position + ", text:" + text,
