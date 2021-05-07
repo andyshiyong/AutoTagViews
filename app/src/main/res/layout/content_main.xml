@@ -68,13 +68,16 @@
                 android:padding="10dp"
                 app:container_max_lines="2"
                 app:container_background_color="#00000000"
-                app:container_border_color="#3300ff00"
+                app:container_border_color="#33ffff00"
+                app:tag_background_color="#33ffff00"
+                app:tag_selected_background_color="#3300ff00"
                 app:container_border_radius="0dp"
                 app:container_border_width="4dp"
                 app:container_enable_drag="true"
                 app:horizontal_interval="10dp"
-                app:tag_clickable="false"
-                app:tag_theme="random"
+                app:tag_selectable="true"
+                app:tag_clickable="true"
+                app:tag_theme="none"
                 app:vertical_interval="10dp" />
 
             <com.shiyong.tagviews.TagContainerLayout
@@ -89,6 +92,7 @@
                 app:container_gravity="right"
                 app:horizontal_interval="10dp"
                 app:tag_background_color="#FFFFFFFF"
+                app:tag_selected_background_color="#3300ff00"
                 app:tag_border_color="#330000ff"
                 app:tag_border_width="1dp"
                 app:tag_clickable="true"

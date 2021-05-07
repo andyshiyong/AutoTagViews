@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         mTagContainerLayout1.setOnTagClickListener(new OnTagViewClickListener() {
             @Override
             public void onTagClick(int position, String text) {
+                mTagContainerLayout1.toggleSelectTagView(position);
                 Toast.makeText(MainActivity.this, "click-position:" + position + ", text:" + text,
                         Toast.LENGTH_SHORT).show();
             }
@@ -122,8 +123,14 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             }
         });
+        mTagContainerLayout2.setOnTagClickListener(new OnTagViewClickListener() {
+            @Override
+            public void onTagClick(int position, String text) {
+                mTagContainerLayout2.toggleSelectTagView(position);
+            }
+        });
 
-        mTagContainerLayout3.setOnTagClickListener(new TagView.OnTagClickListener() {
+        mTagContainerLayout3.setOnTagClickListener(new OnTagViewClickListener() {
             @Override
             public void onTagClick(int position, String text) {
                 List<Integer> selectedPositions = mTagContainerLayout3.getSelectedTagViewPositions();
@@ -161,7 +168,22 @@ public class MainActivity extends AppCompatActivity {
             public void onTagCrossClick(int position) {
             }
         });
+        mTagContainerLayout4.setOnTagClickListener(new OnTagViewClickListener() {
+            @Override
+            public void onTagClick(int position, String text) {
+                Toast.makeText(MainActivity.this, "mTagContainerLayout4:" + position + ", text:" + text,
+                        Toast.LENGTH_SHORT).show();
 
+            }
+        });
+        mTagcontainerLayout5.setOnTagClickListener(new OnTagViewClickListener() {
+            @Override
+            public void onTagClick(int position, String text) {
+                Toast.makeText(MainActivity.this, "mTagContainerLayout5:" + position + ", text:" + text,
+                        Toast.LENGTH_SHORT).show();
+
+            }
+        });
         // Custom settings
 //        mTagContainerLayout1.setTagMaxLength(4);
 

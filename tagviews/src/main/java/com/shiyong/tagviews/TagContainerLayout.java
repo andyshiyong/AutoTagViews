@@ -327,6 +327,9 @@ public class TagContainerLayout extends ViewGroup {
                 mTagBorderColor);
         mTagBackgroundColor = attributes.getColor(R.styleable.AndroidTagView_tag_background_color,
                 mTagBackgroundColor);
+        mSelectedTagBackgroundColor = attributes.getColor(R.styleable.AndroidTagView_tag_selected_background_color,
+                mSelectedTagBackgroundColor);
+
         mTagTextColor = attributes.getColor(R.styleable.AndroidTagView_tag_text_color, mTagTextColor);
         mTagTextDirection = attributes.getInt(R.styleable.AndroidTagView_tag_text_direction, mTagTextDirection);
         isTagViewClickable = attributes.getBoolean(R.styleable.AndroidTagView_tag_clickable, false);
